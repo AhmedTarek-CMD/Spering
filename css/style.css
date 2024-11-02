@@ -1,0 +1,200 @@
+:root {
+  --first-color: #1cbbb4;
+  --second-color: #1a2e35;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.landing {
+  background: linear-gradient(
+    to right,
+    var(--second-color) 50%,
+    var(--first-color) 50%
+  );
+  height: 100vh;
+  position: relative;
+}
+.landing .nav-bar ul {
+  list-style: none;
+}
+.landing .nav-bar ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 1rem;
+  color: white;
+}
+.landing .nav-bar ul li:hover a {
+  color: var(--first-color);
+}
+.landing .nav-bar .login a {
+  text-decoration: none;
+}
+.landing .nav-bar .login a:hover {
+  color: var(--second-color) !important;
+}
+.landing .heading .btns .bg-danger:hover {
+  background-color: transparent !important;
+  color: orangered !important;
+  border-color: orangered !important;
+}
+.landing .heading .btns .bg-white:hover {
+  background-color: transparent !important;
+  color: white !important;
+  border-color: white !important;
+}
+@media (max-width: 1200px) {
+  .landing .heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (max-width: 768px) {
+  .navigation {
+    display: none !important;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: -138px;
+    width: 150%;
+    background-color: #00000047;
+    z-index: 100;
+    text-align: center;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+  .nav-bar.open .navigation {
+    display: flex !important;
+  }
+  .landing .nav-bar ul li {
+    border-bottom: 1px solid black;
+    padding: 10px;
+  }
+}
+
+.experince .title .btns .bg-white {
+  background-color: var(--second-color) !important;
+  color: white !important;
+  width: 165px !important;
+}
+.experince .title .btns .bg-danger:hover {
+  background-color: transparent !important;
+  color: orangered !important;
+  border-color: orangered !important;
+}
+.experince .title .btns .bg-white:hover {
+  background-color: transparent !important;
+  color: var(--second-color) !important;
+  border-color: var(--second-color);
+}
+.category {
+  background-color: var(--first-color);
+}
+.category .row .box {
+  height: 110px;
+}
+.about .bg-danger:hover {
+  background-color: transparent !important;
+  color: orangered !important;
+  border-color: orangered !important;
+}
+.about .js .cards svg {
+  color: white;
+  font-size: 3rem;
+  padding: 13px;
+  background-color: var(--second-color);
+  border-radius: 50%;
+  margin-right: 1.5rem;
+}
+.about .js .element {
+  cursor: pointer;
+}
+.about .js .element.active svg {
+  background-color: var(--first-color);
+}
+.about .js .element:hover svg {
+  background-color: var(--first-color);
+}
+.about .js img.active {
+  height: 100%;
+}
+.about .js img {
+  height: 0;
+}
+.testmonile {
+  width: 50rem;
+  margin: auto;
+}
+@media (max-width: 767px) {
+  .testmonile {
+    width: 20rem;
+    margin: auto;
+  }
+}
+.testmonile .carousel {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.carousel-control-next-icon {
+  position: absolute;
+  right: -15px;
+  background-image: none;
+}
+.carousel-control-next-icon svg {
+  padding: 10px;
+  background-color: var(--second-color);
+  color: white;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+.carousel-control-prev-icon {
+  position: absolute;
+  left: -20px;
+  background-image: none;
+}
+.carousel-control-prev-icon svg {
+  padding: 10px;
+  background-color: var(--second-color);
+  color: white;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+.footer {
+  background-color: var(--second-color);
+}
+.footer .logo img {
+  width: 70px;
+}
+.footer .links svg {
+  color: white;
+  font-size: 2rem;
+  padding-left: 1rem;
+  cursor: pointer;
+}
+.footer .links svg:hover {
+  color: var(--first-color);
+}
+.footer .row ul {
+  list-style: none;
+  padding: 0;
+  line-height: 2;
+}
+.footer .row li:hover a {
+  color: var(--first-color) !important;
+}
+.footer .bg-danger:hover {
+  background-color: transparent !important;
+  color: white !important;
+  border-color: white !important;
+}
+.footer .contact svg {
+  color: white;
+  margin-right: 1rem;
+}
